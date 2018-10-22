@@ -40,7 +40,7 @@ def check(grenze, funktion, dezimal, abweichungen):
             x=-x
 
         #Wenn eine Abweichungen  von 1% gefunden und die gewünschte Zahl von verschieden hohen Abweichungen noch nicht gefunden wurde....
-        if Fehler(funktion, x*10**(-dezimal))>0.01 and gefunden!=abweichungen and Wert[gefunden] != f(x*10**(-dezimal)):
+        if Fehler(funktion, x*10**(-dezimal))>0.01 and gefunden!=abweichungen and Wert[gefunden] != funktion(x*10**(-dezimal)):
             #....wird der Wert mit dem letzten Wert abgeglichen und ggf ausgegeben
             string="x=" + str(x*10**(-dezimal)) + "f(x)=" + str( funktion(x*10**(-dezimal)) ) +", Fehler : " +str( Fehler(funktion,x*10**(-dezimal))*100)+ "% \n"
             datalog.write(string)

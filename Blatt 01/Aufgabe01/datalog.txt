@@ -1,5 +1,5 @@
-
-2018-10-21 22:47:00.043323: 
+ 
+2018-10-22 12:37:45.595198: 
  
 Fuer ein x von 0 bis 100000000 mit 0 Dezimalstellen ergeben sich folgende Abweichungen: 
 x=41286f(x)=0.65625, Fehler : 1.5625% 
@@ -11,30 +11,17 @@ x=165141f(x)=0.0, Fehler : 100.0%
 
 Unterschiedliche Abweichungen gesucht: 3 
 Unterschiedliche Abweichungen gefunden: 3
-Dauer= 0.4797412689653603 s 
+Dauer= 0.47205101802811456 s 
  
  
-2018-10-22 00:48:17.194562: 
- 
-Fuer ein x von 0 bis 100000000 mit 0 Dezimalstellen ergeben sich folgende Abweichungen: 
-x=41286f(x)=0.65625, Fehler : 1.5625% 
-x=52016f(x)=0.6875, Fehler : 3.125% 
-x=65536f(x)=0.65625, Fehler : 1.5625% 
-
-Zusaetzlich ergibt sich als Nullstelle: 
-x=165141f(x)=0.0, Fehler : 100.0% 
-
-Unterschiedliche Abweichungen gesucht: 3 
-Unterschiedliche Abweichungen gefunden: 3
-Dauer= 0.4759496191283472 s 
- 
- 
-2018-10-22 00:48:17.671219: 
+2018-10-22 12:37:46.067845: 
  
 Fuer ein x von 0 bis 1 mit 8 Dezimalstellen ergeben sich folgende Abweichungen: 
+x=1e-08f(x)=0.0, Fehler : 100.0% 
+x=8.740000000000001e-06f(x)=1.3303500151457557, Fehler : 99.55250227186335% 
 
 Unterschiedliche Abweichungen gesucht: 2 
-Unterschiedliche Abweichungen gefunden: 0
-Dauer= 208.14707619139725 s 
+Unterschiedliche Abweichungen gefunden: 2
+Dauer= 0.00301739095806719 s 
  
  
