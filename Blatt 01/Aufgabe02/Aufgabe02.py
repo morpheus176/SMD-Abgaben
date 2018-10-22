@@ -20,7 +20,7 @@ x=np.linspace(0, np.pi, 5000)
 plt.plot(x, quer_V1(x)*10**(22), 'r-', label='ohne Umformung')
 plt.plot(x, quer_V2(x)*10**(22), 'b-', label='mit Umformung')
 plt.xlabel(r'$\theta$')
-plt.ylabel(r'$\frac{d \sigma}{d \Omega}/[10^{-22} m^2]$')
+plt.ylabel(r'$\frac{d \sigma}{d \Omega} \: / \:10^{-22} m^2$')
 plt.xticks([0, np.pi / 2, np.pi],
            [r"$0$", r"$\frac{1}{2}\pi$", r"$\pi$"])
 plt.legend()
