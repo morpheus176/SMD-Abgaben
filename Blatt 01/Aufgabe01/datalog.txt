@@ -273,3 +273,55 @@ Unterschiedliche Abweichungen gefunden: 1
 Dauer= 0.5169512063306045 s 
  
  
+2018-10-25 01:14:40.996056: 
+ 
+Fuer ein x von 0 bis 180000 mit 0 Dezimalstellen ergeben sich folgende Abweichungen: 
+x=41286  f(x)=0.65625, Fehler : 1.5625% 
+
+Zusaetzlich ergibt sich als Nullstelle: 
+x=165141f(x)=0.0, Fehler : 100.0% 
+
+Unterschiedliche Abweichungen gesucht: 1 
+Unterschiedliche Abweichungen gefunden: 1
+Dauer= 0.5242676967362798 s 
+ 
+ 
+2018-10-25 01:15:40.425811: 
+ 
+Fuer ein x von 0 bis 180000 mit 0 Dezimalstellen ergeben sich folgende Abweichungen: 
+x=41286  f(x)=0.65625, Fehler : 1.5625% 
+
+Zusaetzlich ergibt sich als Nullstelle: 
+x=165141f(x)=0.0, Fehler : 100.0% 
+
+Unterschiedliche Abweichungen gesucht: 1 
+Unterschiedliche Abweichungen gefunden: 1
+Dauer= 0.5162793475972944 s 
+ 
+ 
+2018-10-25 01:16:31.402591: 
+ 
+Fuer ein x von 0 bis 180000 mit 0 Dezimalstellen ergeben sich folgende Abweichungen: 
+x=41286  f(x)=0.65625, Fehler : 1.5625% 
+
+Zusaetzlich ergibt sich als Nullstelle: 
+x=165141f(x)=0.0, Fehler : 100.0% 
+
+Unterschiedliche Abweichungen gesucht: 1 
+Unterschiedliche Abweichungen gefunden: 1
+Dauer= 0.5203884378857784 s 
+ 
+ 
+2018-10-25 01:16:49.148760: 
+ 
+Fuer ein x von 0 bis 180000 mit 0 Dezimalstellen ergeben sich folgende Abweichungen: 
+x=41286  f(x)=0.65625, Fehler : 1.5625% 
+
+Zusaetzlich ergibt sich als Nullstelle: 
+x=165141f(x)=0.0, Fehler : 100.0% 
+
+Unterschiedliche Abweichungen gesucht: 1 
+Unterschiedliche Abweichungen gefunden: 1
+Dauer= 0.5237369226480678 s 
+ 
+ 

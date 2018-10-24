@@ -28,6 +28,7 @@ def argument(x, dezimal, start, grenze):
 
 
 #Funktion zum empirschen Testen der Funktionen. Es wird angegeben, welche Funktionen bis wohin (grenze) getestet werden soll, wie viele verschiedene Abweichungen erfasst und auf wie viele Dezimalstellen überprüft werden solls.
+#Funktioniert für positive start und grenzwerte, negative nicht getestet
 def check(start, grenze, funktion, dezimal, abweichungen):
     #Misst die benötigte Zeit bzw startet die Uhr zur Messung
     start_t = time.clock()
@@ -45,10 +46,7 @@ def check(start, grenze, funktion, dezimal, abweichungen):
     string="Fuer ein x von " + str(start) + " bis "+ str(grenze)+ " mit " +str( dezimal)+ " Dezimalstellen ergeben sich folgende Abweichungen: \n"
     datalog.write(string)
     #Hier wird der Durclauf gestartet. Die Range wird mit den Dezimalzahlen angepasst, da z.B. ein Testdurchlauf von 0 bis 100 mit einer Dezimalstelle 1000 Durchläufe braucht und nicht 100.
-    for x in range(abs((max(start, grenze)-max(-start, -grenze))*10**dezimal)):
-        #wenn eine negative Grenze übergeben wurde, muss natürlich auch mit negativen x gerechnet werden
-        if grenze < 0:
-            x=-x
+    for x in range(abs((max(start, grenze)+max(-start, -grenze))*10**dezimal)):
 
         #Wenn eine Abweichungen  von 1% gefunden und die gewünschte Zahl von verschieden hohen Abweichungen noch nicht gefunden wurde....
         if Fehler(funktion, argument(x, dezimal, start, grenze))>0.01 and gefunden!=abweichungen and Wert[gefunden] != funktion(argument(x, dezimal, start, grenze)):
@@ -76,10 +74,6 @@ def check(start, grenze, funktion, dezimal, abweichungen):
     #gibt Zeit aus
     string="Dauer= " +str( time.clock()-start_t) + " s \n \n \n"
     datalog.write(string)
-#Führt check von -x bis x aus.
-def doublecheck(grenze, funktion, dezimal):
-    check(grenze, funktion, dezimal)
-    check(-grenze, funktion, dezimal)
 
 #Berechnet die Abweichung
 def Fehler(funktion, x):
@@ -90,6 +84,7 @@ def Fehler(funktion, x):
 #Bei f werden nur ganzzalige x kontrolliert, bei g wird bis zur 8. Dezimalstelle gerechnet.
 check(0, 180000, f, 0, 1)
 check(1, 0, g, 8, 1)
+#print (Fehler(g, 8.730000000012339e-06))
 
 #
 x=np.linspace(1e-7, 0.01, 500000)
