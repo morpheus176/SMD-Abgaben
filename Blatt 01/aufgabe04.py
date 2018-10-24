@@ -18,9 +18,9 @@ for xx in rot:
             treffer_a += 1
         if yy + xx >= 9:                                        # Berechnung der Treffer für b)
             treffer_b += 1
-        if xx == 4 and yy == 5:                                 # Berechnung der Treffer für c)
+        if (xx == 4 and yy == 5) or (yy == 4 and xx == 5):      # Berechnung der Treffer für c)
             treffer_c += 1
-        if (xx == 4 and yy == 5) or (yy == 4 and xx == 5):      # Berechnung der Treffer für d)
+        if xx == 4 and yy == 5:                                 # Berechnung der Treffer für d)
             treffer_d += 1
 
 daten = [treffer_a, treffer_b, treffer_c, treffer_d]
