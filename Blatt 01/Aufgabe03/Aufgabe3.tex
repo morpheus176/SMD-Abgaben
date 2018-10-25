@@ -1,0 +1,52 @@
+\section{Aufgabe 3}
+
+Zunächst normieren:
+
+\begin{align*}
+  1 &\stackrel{!}{=}\int_0^{\infty} f(v)\symup{d}v \\
+  1 &= \int_0^{\infty} 4 \pi N \cdot \exp{\left(- \frac{mv^2}{2k_bT}\right)}\cdot v^2 \symup{d}v \\
+  &= 4 \pi N \cdot \sqrt{\frac{\pi}{2}} \left(- \frac{mv^2}{m} \right)^{2/3} \\
+  => N &= \left( \frac{m}{2 \pi k_B T} \right)^{3/2}
+\end{align*}
+
+\begin{enumerate}
+  \item Wahrscheinlichste Geschwindigkeit $\frac{\symup{d}f(v)}{\symup{d}v} = 0$
+  \begin{align*}
+    \frac{\symup{d}f(v)}{\symup{d}v} &= 4 \pi N \cdot \exp{-\frac{mv²}{2k_BT}} \cdot \left( - \frac{mv³}{k_BT}  + 2v\right)\\
+    v_1 &= 0 \; oder \; v_{2,3} =  \pm \sqrt{\frac{2k_BT}{m}}
+  \end{align*}
+  Da die Maxwell'sche Geschwindigkeitsverteilung einen Definitionsbereich von $(0, \infty]$ hat, fällt die negative Lösung $v_5$ weg.
+  Jetzt nurnoch die hinreichende Bedingung für Extrema:
+  \begin{align*}
+    \frac{\symup{d²}f(v=0)}{\symup{d}v²} &=  8 \pi \left( \frac{m}{2 \pi k_BT} \right)^{3/2} > 0 \; => \symup{Minimum}\\
+    \frac{\symup{d²}f(v_2)}{\symup{d}v²} &= -32 \pi \left( \frac{m}{2 \pi k_BT} \right)^{3/2} \cdot \exp{-1} < 0 \; => \symup{Maximum}
+  \end{align*}
+  \item Mittelwert $<v>$
+    \begin{align*}
+      <v> &= \int_0^{\infty} 4 \pi N \exp{-\frac{mv²}{2k_BT}} \cdot v³ \symup{d}v \\
+      &= \sqrt{\frac{8k_BT}{m \pi}} =v_m
+    \end{align*}
+  \item Median
+    Hier muss folgende Integrale gelöst werden, aber leider wissen wir nicht, wie wir diese Integrale nummerisch lösen können:
+    \begin{align*}
+      0,5 &\geq \int_{0}^{v_{\symup{median}}} f(v) \symup{d}v \\
+      0,5 &\geq \int^{\infty}_{v_{\symup{median}}} f(v) \symup{d}v \\
+    \end{align*}
+  \item volle Breite, halbe Höhe
+  \item Standardabweichung $\sigma$
+    \begin{align*}
+      \sigma^2 &= <v²>-<v>² \\
+      <v²> &= \int_0^{\infty} f(v) \cdot v² \symup{d}v \\
+      &= 4 \pi N \exp{-\frac{mv²}{2k_BT}} \cdot v⁴ \symup{d}v \\
+      &= \frac{3k_BT}{m}\\
+      \sigma &= \sqrt{\frac{k_BT}{m}\cdot \left( 3 - \frac{8}{\pi}\right)} \\
+      &= \sqrt{<v> \left( \frac{8 \pi}{3}-1 \right)}
+    \end{align*}
+
+
+
+
+
+
+
+\end{enumerate}
