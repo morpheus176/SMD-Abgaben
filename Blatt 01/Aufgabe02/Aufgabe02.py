@@ -1,3 +1,4 @@
+
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -14,7 +15,7 @@ def konditionsquer(x):
     return abs(((3*b**2-1)*x*np.sin(2*x))/((np.sin(x)**2+2)*(b**2*np.cos(x)**2-1)))
 #Zusammenhänge aus der Aufgabe
 E=50*10**9
-m=511*10**6
+m=511*10**6#
 a=1/137
 gamma=E/m
 s=(2*E)**2
