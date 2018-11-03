@@ -1,7 +1,7 @@
 \section{Aufgabe 6}
 In dieser Aufgabe wird der Zufallsgenerator
 \begin{equation}
-  x_n = (a \cdot x_{n-1} + b) \% m  \rightarrow v_n = \frac{x_n}{m}\label{eqn:randon}
+  x_n = (a \cdot x_{n-1} + b) \% m  \rightarrow v_n = \frac{x_n}{m}\label{eqn:random}
 \end{equation}
 untersucht. \\
 Für die Teilaufgaben \ref{sec:6b} und \ref{sec:6c} werden die Werte $a=1601$, $b=3456$ und $m=10^4$ verwendet.
@@ -20,8 +20,8 @@ Das Ergebnis lässt sich mit den Regeln für gute linear-kongruente Generatoren 
 \begin{itemize}
   \item $b = 3 \neq 0$
   \item $b$ und $m$ sind Teilerfremd, da die Quersumme von $1024$ gleich $7$ ist. Daher ist $m$ nicht durch $b$ teilbar.
-  \item Jeder Primfaktor von $m$ teilt $a-1$, da $1024=2^10$ und $a-1=4n$ mit $n \in \mathbb{N}$.
-  \item $1024=2^10=4^5$, $a-1=4n$ $n \in \mathbb{N}$ \textrightarrow beide sind durch $4$ teilbar.
+  \item Jeder Primfaktor von $m$ teilt $a-1$, da $1024=2^{10}$ und $a-1=4n$ mit $n \in \mathbb{N}$.
+  \item $1024=2^{10}=4^5$, $a-1=4n$ $n \in \mathbb{N}$ \textrightarrow beide sind durch $4$ teilbar.
 \end{itemize}
 
 \subsection{Teilaufgabe b)} \label{sec:6b}
@@ -65,14 +65,14 @@ Im Vergleich mit \ref{fig:6bhist} fällt auf, dass die Zufallszahlen weniger gle
 Es ergeben sich folgende Scatter-Plots:
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.7\textwidth]{Aufgabe06/Teilaufgabe_c)_2D-Scatter.pdf}
+  \includegraphics[width=0.7\textwidth]{Aufgabe06/Teilaufgabe_d)_2D-Scatter.pdf}
   \caption{2D-Scatter}
   \label{fig:2dscatterc}
 \end{figure}
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.7\textwidth]{Aufgabe06/Teilaufgabe_c)_3D-Scatter.pdf}
+  \includegraphics[width=0.7\textwidth]{Aufgabe06/Teilaufgabe_d)_3D-Scatter.pdf}
   \caption{3D-Scatter}
   \label{fig:3dscatterc}
 \end{figure}
