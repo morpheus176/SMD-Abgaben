@@ -3,6 +3,7 @@ from sympy import Symbol
 from scipy import optimize
 import numpy as np
 import matplotlib.pyplot as plt
+from scipy.optimize import brentq
 
 np.random.seed(42)
 
@@ -38,3 +39,23 @@ plt.hlines(y=f(max_x), xmin=0, xmax=20, linewidth=1, color='black')
 plt.vlines(x=max(x), ymin=0, ymax=f(max_x), linewidth=1, color='black')
 plt.vlines(x=max(-x), ymin=0, ymax=f(max_x), linewidth=1, color='black')
 plt.savefig("Teilaufgabe_a).pdf")
+
+plt.clf()
+
+N=15/(np.pi)**4
+
+def g(x):
+    return 200*N*x**(-0.1)*np.exp(-x**0.9)
+
+def h(x):
+    return f(max_x) - g(x)
+
+x_s = brentq(h, 5, 10)
+
+xx = np.linspace(5, 20)
+
+plt.plot(xx, g(xx), 'b-')
+plt.hlines(y=f(max_x), xmin=0, xmax=20, linewidth=1, color='black')
+plt.plot(x, f(x), 'r-')
+
+plt.savefig('b.pdf')
