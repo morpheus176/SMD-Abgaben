@@ -31,11 +31,10 @@ while len(xin)<10**5:
 
 
 x=np.linspace(0, 20, 500)
-fig, ax = plt.subplots()
-ax.plot(x, f(x))
-ax.plot(xin, yin, 'b.', alpha=0.01)
-ax.plot(xout, yout, 'r.', alpha=0.01)
-ax.hlines(y=f(max_x), xmin=0, xmax=20, linewidth=1, color='black')
-ax.vlines(x=max(x), ymin=0, ymax=f(max_x), linewidth=1, color='black')
-ax.vlines(x=max(-x), ymin=0, ymax=f(max_x), linewidth=1, color='black')
+plt.plot(x, f(x))
+plt.plot(xin, yin, 'b.', alpha=0.01)
+plt.plot(xout, yout, 'r.', alpha=0.01)
+plt.hlines(y=f(max_x), xmin=0, xmax=20, linewidth=1, color='black')
+plt.vlines(x=max(x), ymin=0, ymax=f(max_x), linewidth=1, color='black')
+plt.vlines(x=max(-x), ymin=0, ymax=f(max_x), linewidth=1, color='black')
 plt.savefig("Teilaufgabe_a).pdf")
