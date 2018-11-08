@@ -77,7 +77,7 @@ verworfen_a = len(xout)
 # b)
 start_time = timeit.default_timer()
 
-xin, yin, xout, yout = rejection(gg, 0, 15)
+xin, yin, xout, yout = rejection(gg, 0, 20)
 
 laufzeit_b = timeit.default_timer() - start_time
 
