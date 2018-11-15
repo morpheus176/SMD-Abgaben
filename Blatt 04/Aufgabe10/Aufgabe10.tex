@@ -72,4 +72,39 @@ Aus \eqref{eqn:b} und \eqref{eqn:sig} ergibt sich der Zusammenhang
 \begin{equation}
   p=\sqrt{\frac{1}{1+\frac{\sigma^2_{y\lvert x}}{b^2 \sigma^2_x}}} \approx 0,75
 \end{equation}
-womit sich $\sigma^2_y=\frac{\sigma_{y\lvert x}}{1-p^2} \approx 2.29$ und $\mu_y=\alpha+\frac{\rho \mu_x}{\sigma_x} \cdot \frac{\sigma_{y\lvert x}}{\sqrt{1-p^2}} \approx 1,44 $ ergeben .
+womit sich $\sigma_y=\sqrt{\frac{\sigma_{y\lvert x}}{1-p^2}} \approx 1,51$ und $\mu_y=\alpha+\frac{\rho \mu_x}{\sigma_x} \cdot \frac{\sigma_{y\lvert x}}{\sqrt{1-p^2}} \approx 1,44 $ ergeben .
+
+
+\subsection{Teilaufgabe b)}
+Es ergibt sich folgender Scatter-Plot:
+\begin{figure}[H]
+  \includegraphics{Aufgabe10/Populationen.pdf}
+  \caption{Scatter-Plot}
+  \label{}
+\end{figure}
+
+\subsection{Teilaufgabe c)}
+es ergeben sich folgende Ergebnisse:
+\begin{console1}{Population 0}
+  Mittelwerte von P0:  [0.00781587 3.00831114] \\
+  Varianz von x0:  12.14051138946726 \\
+  Varianz von y0:  6.654329986905046 \\
+  Kovarianz cov(x, y):  8.095175577329087 \\
+  Korrelation rho:  0.9006490919236851
+\end{console1}
+
+\begin{console1}{Population 1}
+  Mittelwerte von P0:  [6.00106294 1.41078796] \\
+  Varianz von x0:  12.258004437206726 \\
+  Varianz von y0:  2.2870875071918366 \\
+  Kovarianz cov(x, y):  3.9966098123833347 \\
+  Korrelation rho:  0.7548149136498276
+\end{console1}
+
+\begin{console1}{Population 0 + Population 1}
+  Mittelwerte von P0:  [3.0044394  2.20954955] \\
+  Varianz von x0:  21.179010545855338 \\
+  Varianz von y0:  5.108728822098833 \\
+  Kovarianz cov(x, y):  11.971679368277622 \\
+  Korrelation rho:  1.150921805481331
+\end{console1}
