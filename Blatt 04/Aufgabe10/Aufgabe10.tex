@@ -5,7 +5,7 @@ Gegeben ist die Population $P_0$ mit den Werten:
   &\mu_y = 3 \\
   &\sigma_x = 3{,}5 \\
   &\sigma_y = 2{,}6 \\
-  &\text{und Korrelationskoeffizient}\: \rho=9\,.
+  &\rho=0,9.
 \end{align}
 Ebenso ist eine Population $P_1$ gegeben. Bei dieser sind die Werte in $x$ gegeben durch:
 \begin{align}
@@ -14,8 +14,8 @@ Ebenso ist eine Population $P_1$ gegeben. Bei dieser sind die Werte in $x$ gegeb
 \end{align}
 Für die Werte in y sind folgende Zusammenhänge gegeben:
 \begin{align}
-  \text{E}(y\lvert x) = \mu_{y\lvert x} = a + bx \text{mit} a  = -0{,}5 \text{und} b=0{,}6 \label{eqn:Exy0} \\
-  \text{Var}(y\lvert x) = \sigma_{y\lvert x}^2 = 1
+  &\text{E}(y\lvert x) = \mu_{y\lvert x} = a + bx \text{ mit } a  = -0{,}5 \text{  und } b=0{,}6 \label{eqn:Exy0} \\
+  &\text{Var}(y\lvert x) = \sigma_{y\lvert x}^2 = 1
 \end{align}
 
 
@@ -27,7 +27,7 @@ f(y\lvert x) = \frac{1}{\sqrt{2\pi} \sigma_y \sqrt{1-\rho^2}} \cdot \,
 \exp\left(-\frac{1}{2(1-\rho^2)} \left [ \frac{\tilde{y}}{\sigma_y}-\rho\frac{\tilde{x}}{\sigma_x} \right]^2 \right) \text{.}
 \end{equation}
 \begin{center}
-  \tiny {$\tilde{x} = x - \mu_x$ und $\tilde{y} = y - \mu_y$}
+  \small {wobei \text{$\tilde{x} = x - \mu_x$ und $\tilde{y} = y - \mu_y$}}
 \end{center}
 Für die Wahrscheinlichkeitsdichtefunktion einer bivariaten Normalverteilung gilt dagegen:
 \begin{equation}
