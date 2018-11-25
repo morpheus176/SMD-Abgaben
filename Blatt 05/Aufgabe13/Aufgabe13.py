@@ -117,7 +117,8 @@ mu = 2
 sig = 1
 
 log10hits = np.random.normal(mu, sig, size)
-hits = 10**(log10hits)
+hits = [ int(10**x) for x in log10hits ]
+
 dfBackHits = pd.DataFrame({'NumberOfHits': hits})
 
 plt.hist(log10hits, bins=50, density=True, label=r'Untergrund')
