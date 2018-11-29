@@ -1,0 +1,21 @@
+\paragraph{Aufgabe 17}
+
+
+\subparagraph{a)}
+Nicht-numerische Datentypen sollten, wenn möglich (und sinnvoll), in Zahlen ausgedrückt werden um mit ihnen besser arbeiten zu können.
+Im Fall der Titanic könnte z.B. der Status der Passagiere (also ob tot oder lebendig) als 0 oder 1 dargestellt werden.
+Sollte es jedoch nicht-numerische Datentypen geben, die sich nicht sinnvoll in Zahlen ausdrücken lassen, könnte man diese verfallen lassen, sofern sie für die Untersuchung irrelevant sind.
+Ebenso könnte man dann mit nicht-numerische Datentypen weiterarbeiten, sofern dies die Aufbereitung des Datensatzes nicht erschwert.
+
+\subparagraph{b)}
+Die normierung der Attribute kann sinnvoll sein, da Attribute bei verschiedenen Größenordnungen verschieden gewichtet sein können.
+Dadurch könnte einigen Attributen mehr Bedeutung als anderen zugemessen werden, obwohl die Größenordnung nicht ausschlaggebend für die Wichtigkeit ist. Dem kann durch Normierung vorgebeugt werden.
+\subparagraph{c)}
+Sofern nur wenige Daten des Datensatzes Lücken aufweisen, können diese ggf. verworfen werden. Das ist jedoch auch vom zu untersuchenden Datensatz abhängig, da auch fehlende Informationen Informationen sind.
+Wenn die betroffenden Daten dennoch in die Untersuchung eingehen oder seperat auf Korrelation mit ihren Attributen untersucht werden sollen, kann es sinnvoll sein, die Lücken einheitlich zu füllen (z.B. alles auf NaN setzen).
+
+\subparagraph{d)}
+Die Datensätze sollten vom selben Typ sein. Ebenso könnte es sinnvoll sein, die Datensätze vor dem zusammenfügen entsprechend zu labeln, sodass durch das Zusammenfügen keine Informationen verloren gehen.
+
+\subparagraph{e)}
+Redudante Attribute sind vor dem Trainieren der Klassifizierers zu entfernen. Dies kann z.B. per Hand, aber auch durch Entscheidungsbäume geschehen, die einen günstige Schnitt mit mit einem hohen informationsgehalt finden. 
