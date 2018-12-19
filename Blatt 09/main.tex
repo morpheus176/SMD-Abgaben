@@ -1,0 +1,37 @@
+\input{header.tex}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{ dsfont }
+\usepackage{tcolorbox}
+\subject{SMD-Abgabe}
+\title{9. Übungsblatt}
+\date{%
+  Abgabe: 20.12.2018
+}
+
+\begin{document}
+  \setlength{\parindent}{0em}
+  \maketitle
+  \thispagestyle{empty}
+  \newpage
+  %\tableofcontents
+  %\newpage
+
+  \newenvironment{console1}[1]
+  {\begin{center}
+  \begin{minipage}[t]{0.99\linewidth}
+  \begin{tcolorbox}[colback=gray!5,colframe=black!40!black,title= Ausgabe des Programms: #1 ]
+    }
+    {
+  \end{tcolorbox}
+  \end{minipage}
+  \end{center}
+  }
+
+%\input{Aufgabe17/Aufgabe17.tex}
+%\input{Aufgabe18/Aufgabe18.tex}
+\includepdf[pages=-]{Aufgabe27/aufgabe27.pdf}
+%\printbibliography{}
+
+
+\end{document}
