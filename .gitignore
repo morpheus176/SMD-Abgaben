@@ -2,3 +2,4 @@ main.*
 !main.tex
 NeutrinoMC.hdf5
 image_parameters_smd_reduced.hdf5
+smd_deeplearning_gammas_reduced.hdf5
